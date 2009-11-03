@@ -1,7 +1,5 @@
-require 'pathname'
-root  =  Pathname(__FILE__).dirname.parent
-require root.join('test/test_helper')
-require root.join('lib/override')
+require 'test/test_helper'
+require 'lib/override'
 
 class OverrideTest < Test::Unit::TestCase
   context "Override" do

@@ -1,10 +1,12 @@
+task(:default => 'test:all')
+
 # --------------------------------------------------
 # Tests
 # --------------------------------------------------
 namespace(:test) do
 
   desc "Run tests"
-  task(:default) do
+  task(:all) do
     cmd = "ruby -rubygems -I.:lib test/test_override.rb"
     puts(cmd) if ENV['VERBOSE']
     system(cmd)
@@ -18,7 +20,7 @@ namespace(:test) do
         bash -c 'source ~/.rvm/scripts/rvm;
                  rvm use #{version};
                  echo "--------- #{version} ----------";
-                 rake -s test'
+                 rake -s test:all'
       BASH
     end
   end

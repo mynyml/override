@@ -1,7 +1,9 @@
 LICENSE
+Manifest
 README
 Rakefile
 lib/override.rb
 override.gemspec
+specs.watchr
 test/test_helper.rb
 test/test_override.rb

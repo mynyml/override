@@ -1,0 +1,7 @@
+LICENSE
+README
+Rakefile
+lib/override.rb
+override.gemspec
+test/test_helper.rb
+test/test_override.rb
